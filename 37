@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int x,y;
+    printf("bir x değeri gir: ");
+    scanf("%d",&x);
+    printf("bir y değeri gir: ");
+    scanf("%d",&y);
+    if(x>0)
+      if(y>0)
+      printf("1.bolge");
+      else
+      printf("4.bolge");
+    if(x<0)
+      if(y>0)
+      printf("2.bolge");
+      else
+      printf("3.bolge");
+
+    return 0;
+}
