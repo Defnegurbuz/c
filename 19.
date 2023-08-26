@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int p,q,r,s;
+    printf("Input the first integer: ");
+    scanf("%d",&p);
+    printf("Input the second integerr: ");
+    scanf("%d",&q);
+    printf("Input the third integer: ");
+    scanf("%d",&r);
+    printf("Input the fourth integer: ");
+    scanf("%d",&s);
+    if(q>r&&s>p&&r+s>p+q&&r>0&&p>0&&p/2)
+    printf("correct values");
+    else
+    printf("wrong values");
+    
+
+    return 0;
+}
