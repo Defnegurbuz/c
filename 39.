@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int m, x, y, i, t=0;
+    printf("\nInput the first integer: "); 
+    scanf("%d",&x);
+    printf("\nInput the second integer: ");
+    scanf("%d", &y);
+    
+    if(y<x){
+    m=x;
+    x=y;
+    y=m;
+    }
+    
+	for(i = x; i <= y; i++){
+    if((i % 17) != 0)
+        t += i;
+	}
+
+	printf("Sum: %d", t);
+    return 0;
+}
