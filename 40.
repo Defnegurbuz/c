@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int  x, y, i, m ;
+    printf("\nInput the first integer: "); 
+    scanf("%d",&x);
+    printf("\nInput the second integer: ");
+    scanf("%d", &y);
+    if(x>y){
+       m=x;
+       x=y;
+       y=m;
+    }
+    for(i=x;i<y;i++){
+        switch(i%7){
+            case 2:printf("%d\n",i); break;
+            case 3:printf("%d\n",i); break;
+        }
+    }
+    
+    return 0;
+}
